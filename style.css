@@ -1,0 +1,44 @@
+.step-form-container {
+    height: 500px;
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.step-wrapper {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+.move-to-left {
+    /* transform: translateX(-800px) translateY(-400px) rotate(25deg); */
+    transform: rotate(25deg) translate(-500px, -100px);
+    opacity: 0;
+}
+
+.move-from-right {
+    /* transform: translateX(800px) translateY(-400px) rotate(25deg); */
+    transform: rotate(-25deg) translate(500px, -100px);
+    opacity: 0;
+}
+
+.step-form-container .step-wrapper:nth-child(1){
+    background: red;
+}
+
+.step-form-container .step-wrapper:nth-child(2){
+    background: yellow;
+}
+
+.step-form-container .step-wrapper:nth-child(3){
+    background: blue;
+}
+
+.step-form-container .step-wrapper:nth-child(4){
+    background: green;
+}
